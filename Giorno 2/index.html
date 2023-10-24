@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Table</h1>
+
+<table border="1">
+    <caption>Mia Tabella</caption>
+
+    <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Città</th>
+    </tr>
+
+    <tr>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>Roma</td>
+    </tr>
+
+    <tr>
+        <td>Francesca</td>
+        <td>Neri</td>
+        <td>Napoli</td>
+    </tr>
+
+    <tr>
+        <td>Francesca</td>
+        <td>Neri</td>
+        <td>Napoli</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Tot.</td>
+        <td>3</td>
+    </tr>
+
+
+</table>
+
+<hr  />
+
+<h1>Table con Thead, Tbody, Tfoot</h1>
+
+<table border="1">
+    <caption>Mia Tabella</caption>
+
+    <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Città</th>
+    </tr>
+
+    <tr>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>Roma</td>
+    </tr>
+
+    <tr>
+        <td>Francesca</td>
+        <td>Neri</td>
+        <td>Napoli</td>
+    </tr>
+
+    <tr>
+        <td>Francesca</td>
+        <td>Neri</td>
+        <td>Napoli</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Tot.</td>
+        <td>3</td>
+    </tr>
+
+
+</table>
+
+
+<hr  />
+
+<h1>Form</h1>
+
+<Form method="post" action="miapaginadelserver.php">
+
+    <fieldset>
+        <legend>Mio Form</legend>
+        <label for="mionome">Nome:</label>
+        <input type="text" name="nome" id="mionome" autofocus minlength="10"> <br />
+        <label for="miocognome">Cognome:</label>
+        <input type="text" name="cognome" id="miocognome"><br />
+        <label for="miaeta">Età:</label>
+        <input type="number" name="eta" id="miaeta"><br />
+        <label for="miaemail">Email:</label>
+        <input type="email" name="email" id="miaemail" placeholder="mail@example.ex" required><br />
+        <label for="miapassword">Password:</label>
+        <input type="password" name="password" id="miapassword" required><br />
+        <label for="miadatanascita">Data di Nascità</label>
+        <input type="date" name="datadinascita" id="miadatanascita"><br />
+        <label for="mieilinguaggi">Linguaggi:</label>
+        <select name="linguaggi" id="mieilinguaggi">
+            <optgroup label="Front-End">
+            <option value="Javascript">Javascript</option>
+            <option value="React">React</option>
+        </optgroup>
+        <optgroup label="Back-End">
+            <option value="Laravel">Laravel</option>
+            <option value="Php">Php</option>
+        </optgroup>   
+
+        </select> <br />
+        <textarea name="note" placeholder="inserisci note" id="note" cols="30" rows="10">
+
+        </textarea><br />
+        <button type="submit">Invia</button>
+        <button type="reset">Reset</button>
+        
+    </fieldset> 
+
+</Form>
+
+</body>
+</html>
