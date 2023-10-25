@@ -1,0 +1,27 @@
+html {
+    font-size: 16px;
+}
+
+
+article {
+
+    font-size: 25px;
+}
+
+article h1 {
+
+    /* color: red; */
+    font-size: 80%;
+}
+
+article p {
+
+    /* color: red; */
+    font-size: 90%;
+}
+
+article a {
+
+    /* color: red; */
+    font-size: 60%;
+}

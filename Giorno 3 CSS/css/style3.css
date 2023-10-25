@@ -1,0 +1,31 @@
+*{
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+
+header b {
+    color: rgb(9, 100, 9);
+    font-weight: bold;
+    
+}
+
+header p {
+    color: #067006;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+section h3 {
+    color: red;
+}
+
+#grigio {
+
+    color: grey
+}
+
+.link {
+    color: rgb(5, 144, 168);
+}

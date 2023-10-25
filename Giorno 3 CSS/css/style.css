@@ -1,0 +1,76 @@
+/*CSS ESTERNO*/
+
+/* selettore universale */
+
+*{
+    
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* selettore di tipo/base o di tag */
+
+p {
+
+    color: aquamarine;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+  /* selettore di gruppo */
+p, h3 {
+
+    text-transform: uppercase;
+}
+
+
+/* selettore id*/
+#rosso {
+
+    color: rgba(130, 177, 238, 0.466);
+}
+
+#abc {
+    text-decoration: underline;
+    background-color: blueviolet;
+}
+
+/* selettore di tipo class */
+.primary {
+    color: green;
+    text-decoration: line-through;
+}
+
+.txt {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nuovo {
+    text-transform: capitalize;
+}
+
+
+/*selettore dei discendenti */
+article p {
+    color: rgb(233, 233, 28);
+    background-color: greenyellow;
+}
+
+/* selettore di figli diretti */
+/* 
+article > p {
+    color: blue;
+    background-color: brown;
+} */
+
+/* /*selettore di figli adicenti */
+/* h1 + a  */
+
+/* /*selettore in base ad un attributo*/
+/* a [title] /*oppure specificare titolo*/ 
+
+a:hover {
+ color: blueviolet;
+
+}
