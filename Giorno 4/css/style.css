@@ -1,0 +1,68 @@
+ html {
+    width: 450px ; margin: auto;
+text-align: center;
+    background-image: url(../img/sfondo\ esr3.png) ;
+} 
+
+header {
+    background-color: #177474;
+   
+    
+
+}
+
+header div{
+    padding-top: 20px;
+}
+
+header nav {
+    padding-bottom: 1dvb;
+}
+
+main {
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 15px;
+    text-align: left;
+
+}
+
+ h1 + p {
+    color: grey;
+}
+
+
+tr {
+    
+    padding: color rgb(0, 110, 255);
+}
+
+nav a {
+     
+    font: bold;
+    
+}
+
+nav ul  {
+    list-style: none;
+    
+}
+
+.conteiner {
+    width: 400px; margin: auto;
+}
+
+code {
+    background-color: grey;
+    opacity: 0.7;
+}
+
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
