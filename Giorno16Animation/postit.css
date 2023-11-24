@@ -1,0 +1,127 @@
+body {
+
+    font-family:  'Indie Flower',sans-serif;
+    font-weight: 600;
+    background-color: rgb(204, 20, 20);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+    animation: disappear 0.5s forwards ease-out;
+
+}
+
+.box {
+
+
+  
+     display: flex;
+     
+
+     background: blue;
+
+     width: 100px;
+
+     height: 100px;
+
+     margin-right: 20px;
+     margin-bottom: 20px;
+     box-shadow: +3px 3px 5px rgba(0, 0, 0, 0.6);
+     transition: transform 2s ease-out;
+     opacity: 0; /* Inizialmente invisibile */
+     transform: translateY(-100vh) rotate(720deg); /* Posiziona il box fuori dallo schermo */
+     animation: appear 0.8s ease forwards; 
+} 
+
+
+
+.task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Allinea verticalmente al centro */
+    align-items: center; /* Allinea orizzontalmente al centro */
+    text-align: center; /* Testo centrato */
+    color: white; /* Cambia il colore del testo */
+    width: 100%;
+    box-shadow: inset 0px -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+ .task span {
+
+    display: block; 
+    margin-bottom: 0.2em;
+    font-size: 1.9em; 
+
+ }
+
+ div {
+
+    font-size: 0.8em;
+ }
+
+
+
+ .box:not(:hover) {
+    transition: transform 1s ease-in; /* Transizione per tornare alla posizione originale dopo che il mouse passa oltre */
+    transform: scale(1) rotate(var(--angle, deg)); /* Tornare alla dimensione originale e all'angolo originale */
+}
+
+ .box:nth-child(1) {
+    background: rgb(235, 235, 127);
+    transform: rotate(-3deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(2) {
+    transform: rotate(+3deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(3) {
+    transform: rotate(-6deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(4) {
+    transform: rotate(-9deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(5) {
+    transform: rotate(+6deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(6) {
+    background: rgb(235, 183, 235);
+    transform: rotate(+8deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(7) {
+    transform: rotate(-1deg); /* Angolo di rotazione per il primo box */
+}
+
+.box:nth-child(8) {
+    transform: rotate(-3deg); /* Angolo di rotazione per il primo box */
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0; /* Inizialmente invisibile */
+        transform: translateY(-100vh) rotate(720deg); /* Fuori dallo schermo */
+    }
+    100% {
+        opacity: 1;
+        transition: transform 20s; /* Visibile */
+         /* Riporta il box sulla lavagna */
+    }
+}
+
+.box:hover {
+    transform: scale(1.4) rotate(0deg);
+    transition: transform 5s; /* Trasforma la transizione in un'animazione al passaggio del mouse */
+    z-index: 1; 
+}
+
+.test:hover {
+    transform: scale(1.4) rotate(0deg);
+    transition: transform 5s; /* Trasforma la transizione in un'animazione al passaggio del mouse */
+    z-index: 1; 
+}

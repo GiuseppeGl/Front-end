@@ -1,0 +1,151 @@
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+ */
+
+ body{
+      
+      font-family: Arial, Helvetica, sans-serif;
+
+
+ }
+
+
+ header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: brown;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 100%;
+        background: rgb(95, 95, 4);
+        border-radius: 30%;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    span img {
+        width: 15px;
+        padding-right: 5px;
+    }
+
+    .box {
+        background: white;
+        border-radius: 30%;
+        width: 80px;
+        height: 20px;
+        padding: 7px;
+        margin: 3px;
+    }
+
+    .box:nth-child(1) {
+        color: red;
+        width: 100%;
+    }
+
+    .box:nth-child(2),
+    .box:nth-child(3),
+    .box:nth-child(4),
+    .box:nth-child(5) {
+        font-size: 0.5em;
+        font-weight: 600;
+        width: 50px;
+        height: auto;
+        flex-shrink: 1;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    article {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    .divImg {
+
+        background-color: aquamarine;
+        margin: 5px 5px 5px 5px;
+        display: inline-block;
+        border-radius: 20%;
+        text-align: center;
+        position: relative;
+    }
+
+    .miele {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 20%;
+        display: block;
+    }
+
+    img + p{
+
+        font-size: 0.5em;
+    }
+
+    .divImg img {
+        width: 100%;
+        display: block;
+        
+    }
+
+    .addCart {
+        background-color: yellow;
+        font-size: 0.5em;
+        margin: 0 auto; /* Margine auto per centrare l'elemento orizzontalmente */
+        border-radius: 20%;
+        padding: 5px;
+        font-weight: 600;
+        width: 50px;
+        position: absolute; /* Aggiunge posizionamento assoluto all'elemento figlio */
+        bottom: 5px; /* Allineamento dal basso del contenitore padre */
+        left: 0;
+        right: 0;
+    }
+}
+
+
