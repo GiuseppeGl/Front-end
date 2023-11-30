@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  font-size: 2em;
+}
+
+.btn {
+  border-radius: 50%;
+}
+.btn.btn-primary {
+  background-color: #ff8800;
+}
+.btn.btn-secondary {
+  background-color: green;
+}
+.btn.btn-tertiary {
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */

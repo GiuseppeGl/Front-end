@@ -1,0 +1,21 @@
+
+
+.btn{
+
+border-radius: 50%;
+
+    &.btn-primary {
+
+        background-color: $primary-color;
+
+    }
+    &.btn-secondary {
+
+        background-color: $secondary-color;
+    }
+    &.btn-tertiary {
+
+        background-color: $tertiary-color;
+    }
+   
+}
