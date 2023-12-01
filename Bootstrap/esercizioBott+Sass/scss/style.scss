@@ -1,0 +1,31 @@
+@import '../scss/overwrite';
+
+
+body {
+
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.bell {
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bade {
+
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
