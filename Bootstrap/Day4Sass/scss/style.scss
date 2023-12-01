@@ -1,0 +1,27 @@
+/* STYLE SCSS */
+
+@import 'reset';
+@import 'colori';
+@import 'mixin-generici';
+
+
+
+body {
+
+    background-color: $light-color-aqua;
+    h1 {
+        color: $darken-color-aqua; 
+    }
+    p {
+        @include nomeMixin();
+        @include paramMixin(1.3em, normal); 
+    }
+    footer {
+        @include backGMixin('background', $darken-color-aqua);
+        h3 {
+            @include nomeMixin();
+            @include paramMixin(2.5em, lighter); 
+            text-decoration: underline;
+        }
+    }
+}

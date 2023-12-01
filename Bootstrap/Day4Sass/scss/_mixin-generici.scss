@@ -1,0 +1,19 @@
+/* MIXIN GENERICI */
+
+@mixin nomeMixin() {      /* mixin senza parametri e regole sempre le stesse */
+
+    color: white;
+    text-align: center;
+}
+
+@mixin paramMixin ($primaryFont, $weidth) {    /*   mixin con parametri differenti  stesse regole ma con valori differenti */
+
+    font-weight: $weidth;
+    font-size: $primaryFont;/* fine mixin */
+} 
+
+
+@mixin backGMixin($prop, $value) {  /* value è il valore della &prop che andrò a definire */
+
+    #{$prop}: $value;
+}

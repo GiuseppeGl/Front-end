@@ -1,0 +1,6 @@
+/* PARTIAL COLORI */
+
+$color-primary : green;
+$light-color-aqua: lightblue; 
+
+$darken-color-aqua: darken($light-color-aqua, 35%)   /* Voglio scurire il colore del percentuale% */

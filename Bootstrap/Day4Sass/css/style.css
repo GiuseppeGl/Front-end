@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* STYLE SCSS */
+/* PARTIAL FILE DI RESET */
+/* PARTIAL COLORI */
+/* MIXIN GENERICI */
+body {
+  background-color: lightblue;
+}
+body h1 {
+  color: #348fac;
+}
+body p {
+  /* mixin senza parametri e regole sempre le stesse */
+  color: white;
+  text-align: center;
+  /*   mixin con parametri differenti  stesse regole ma con valori differenti */
+  font-weight: normal;
+  font-size: 1.3em; /* fine mixin */
+}
+body footer {
+  /* value è il valore della &prop che andrò a definire */
+  background: #348fac;
+}
+body footer h3 {
+  /* mixin senza parametri e regole sempre le stesse */
+  color: white;
+  text-align: center;
+  /*   mixin con parametri differenti  stesse regole ma con valori differenti */
+  font-weight: lighter;
+  font-size: 2.5em; /* fine mixin */
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
